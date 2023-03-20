@@ -1,0 +1,316 @@
+:root {
+    
+    --Lime_Green: hsl(163, 72%, 41%);
+    --Bright_Red: hsl(356, 69%, 56%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --YouTube: hsl(348, 97%, 39%);
+            
+                /* #### Dark Theme */
+    --main-BG: hsl(230, 17%, 14%);
+    --top_BG: hsl(232, 19%, 15%);
+    --card-BG: hsl(228, 28%, 20%);
+    --card-text: hsl(228, 34%, 66%);
+    --text: hsl(0, 0%, 100%);
+    --toggle: hsl(235, 16%, 29%);
+    --Toggle: linear-gradient(90deg,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    }
+    
+    
+    
+    .light{
+        /* ### Primary ###*/
+        --main-BG: hsl(0, 0%, 100%);
+        --top_BG: hsl(225, 100%, 98%);
+        --card-BG: hsl(227, 47%, 96%);
+        --card-text: hsl(228, 12%, 44%);
+        --text: hsl(230, 17%, 14%);
+        --Toggle: linear-gradient(90deg,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        --toggle: hsl(230, 22%, 74%);
+    
+    }
+    .dark{
+            /* #### Dark Theme */
+            --main-BG: hsl(230, 17%, 14%);
+            --top_BG: hsl(232, 19%, 15%);
+            --card-BG: hsl(228, 28%, 20%);
+            --card-text: hsl(228, 34%, 66%);
+            --text: hsl(0, 0%, 100%);
+            --toggle: hsl(235, 16%, 29%);
+            --Toggle: linear-gradient(90deg,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        }
+    
+        :root {
+            --Lime_Green: hsl(163, 72%, 41%);
+            --Bright_Red: hsl(356, 69%, 56%);
+            --Facebook: hsl(208, 92%, 53%);
+            --Twitter: hsl(203, 89%, 53%);
+            --Instagram: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+            --YouTube: hsl(348, 97%, 39%);
+            
+        }
+    
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    
+                    /* ######## HEARDER CONTENT ######## */
+    .header {
+        font-size: 1.6rem;
+        padding: 30px 0px 10px 10px;
+        color: var(--text);
+    }
+    
+    .sub-header {
+        color: var(--text);
+        font-weight: 900;
+        padding: 0 25px 30px 10px ;
+    }
+    
+    .border-line {
+        border: 0.1px solid var(--card-text);
+        width: 90%;
+        margin: auto;
+    }
+    
+    
+                    /* ######## COLOR SWITCH ######## */
+    
+    .color-switcher-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--text);
+        font-weight: 900;
+        padding: 20px 25px 30px 25px;
+    }
+    
+    
+    .switch-btn {
+        display: flex;
+        justify-content: end;
+        background-color: var(--toggle);    
+        width: 55px;
+        border-radius: 15px;
+        padding: 4px;
+        cursor: pointer;
+    }
+    
+    .switch-btn-dark {
+        justify-content: start;
+    }
+    
+    .switch-btn:hover {
+        background-image: var(--Toggle)
+    }
+    
+    .btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--main-BG);
+    }
+    
+                        /* ######## FOLLOWERS CARDS ######## */
+    .main-container {
+        background-color: var(--main-BG);
+    }
+    
+    .cards-container{
+        margin: 5px;
+        background-color: var(--main-BG);
+    }
+    
+    .cards-followers {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: var(--card-BG);
+        padding: 25px 0px;
+        color: var(--text);
+        cursor: pointer;
+    }
+    
+    .cards-followers:hover {
+        background-color: var(--toggle);
+    }
+    
+    .icon-name {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 15px;
+        font-size: 14px;
+    }
+    
+    .number-of_followers {
+        font-size: 50px;
+    }
+    
+    .today {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100px;
+    }
+    
+    .per-day {
+        color: var(--Lime_Green);
+        font-size: 15px;
+        font-weight: 1000;
+    }
+    
+    .followers {
+        color: var(--card-text);
+        padding-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    
+    .name {
+        padding-left: 8px;
+    }
+                    
+                    /* ######## OVERVIEW CARDS ######## */
+    
+    
+    
+    .overview {
+        padding: 0px 25px 0 10px;
+        color: var(--card-text);
+    }
+    
+    .cards-views {
+        margin: 10px;
+        border-radius: 5px;
+        background-color: var(--card-BG);
+        color: var(--text);
+        cursor: pointer;
+    }
+    
+    .cards-views:hover {
+        background-color: var(--toggle);
+    }
+    
+    .overview {
+        font-size: 23px;
+        margin: 25px 0;
+    }
+    
+    .views-icon_views {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+        font-weight: 1000;
+    }
+    
+    .views-likes {
+        color: var(--card-text);
+    }
+    
+    .percent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 1000;
+    }
+    
+    .up-arrow {
+        color: var(--Lime_Green);
+    }
+    
+    .down-arrow {
+        color: var(--Bright_Red);
+    }
+    
+    h2 {
+        font-weight:bolder;
+    }
+    
+                        /* ######## ICONS COLORS ######## */
+    
+    
+    
+    .fc, .insta, .twitter, .youtube {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px 5px 0 0;
+        top: 0;
+    }
+    
+    .twitter {
+        background-color: var(--Twitter);
+    }
+    
+    .fc {
+        background-color: var(--Facebook);
+    }
+    
+    .insta {
+        background-image: var(--Instagram);
+    }
+    
+    .youtube{
+        background-color: var(--YouTube);
+    }
+    
+    .y-day {
+        color: var(--Bright_Red)
+    }
+    
+    @media  (min-width: 490px) {
+        .cards-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .cards-followers {
+            min-width: 40%;
+        }
+    
+        .cards-views {
+            min-width: 40%;
+        }
+    
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            margin: auto;
+        }
+    
+        .border-line {
+            display: none;
+        }
+        
+        .text-switch {
+            margin-right: 20px;
+        }
+    
+        .btn {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    
+    
+    @media (min-width: 900px){
+    
+        .cards-followers {
+            min-width: 20%;
+        }
+    
+        .cards-views {
+            min-width: 20%;
+        }
+    }
